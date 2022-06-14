@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+   --FF-1: 'Big Shoulders Display', cursive;
+   --FF-2: 'Lexend Deca', sans-serif;
+   --Bright-orange: hsl(31, 77%, 52%);
+   --Dark-cyan: hsl(184, 100%, 22%);
+   --Very-dark-cyan: hsl(179, 100%, 13%);
+   --Transparent-white: hsla(0, 0%, 100%, 0.75);
+   --Very-light-gray: hsl(0, 0%, 95%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+nav{
+    background-color: var(--Dark-cyan);
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+nav a{
+    text-decoration: none;
+    color: var(--Very-light-gray);
+}
+nav a:hover{
+    color: var(--Bright-orange);
+}
+h2{
+    color: var(--Very-light-gray);
+    font-family: var(--FF-1);
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+p{
+    color: var(--Transparent-white);
+    font-family: var(--FF-2);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+.card-container{
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: left;
+}
+.btn{
+    width: 9rem;
+    border: transparent;
+    border-radius: 2rem;
+    padding: 0.9rem 1rem;
+    cursor: pointer;
+}
+.left{
+    background-color: var(--Bright-orange);
+    padding: 2rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.left .btn{
+    color: var(--Bright-orange);
+}
+.middle{
+    background-color: var(--Dark-cyan);
+    padding: 2rem;
+}
+.middle .btn{
+    color: var(--Dark-cyan);
+}
+.right{
+    background-color: var(--Very-dark-cyan);
+    padding: 2rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.right .btn{
+    color: var(--Very-dark-cyan);
+}
+.btn:hover{
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+}
+@media screen and (min-width:767px){
+    .card-container{
+        width: 55%;
+        height: auto;
+        margin: 6rem auto;
+        display: flex;
+    }
+    .right{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+    .left{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+}
+}
